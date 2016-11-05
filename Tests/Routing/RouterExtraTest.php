@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Sonatra\Bundle\RoutingExtraBundle\Tests\Routing;
+namespace Sonatra\Component\RoutingExtra\Tests\Routing;
 
-use Sonatra\Bundle\RoutingExtraBundle\Routing\PropertyPathMatcher;
-use Sonatra\Bundle\RoutingExtraBundle\Routing\RouterExtra;
-use Sonatra\Bundle\RoutingExtraBundle\Routing\RouterExtraInterface;
-use Sonatra\Bundle\RoutingExtraBundle\Tests\Fixtures\Model\Foo;
+use Sonatra\Component\RoutingExtra\Routing\PropertyPathMatcher;
+use Sonatra\Component\RoutingExtra\Routing\RouterExtra;
+use Sonatra\Component\RoutingExtra\Routing\RouterExtraInterface;
+use Sonatra\Component\RoutingExtra\Tests\Fixtures\Model\Foo;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
 

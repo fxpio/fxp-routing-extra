@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Sonatra\Bundle\RoutingExtraBundle\Tests\Fixtures\Model;
+namespace Sonatra\Component\RoutingExtra\Tests\Fixtures\Model;
 
 /**
  * @author François Pluchino <francois.pluchino@sonatra.com>

@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Sonatra\Bundle\RoutingExtraBundle\Tests\Routing;
+namespace Sonatra\Component\RoutingExtra\Tests\Routing;
 
-use Sonatra\Bundle\RoutingExtraBundle\Routing\PropertyPathMatcher;
-use Sonatra\Bundle\RoutingExtraBundle\Routing\PropertyPathMatcherInterface;
-use Sonatra\Bundle\RoutingExtraBundle\Tests\Fixtures\Model\Foo;
+use Sonatra\Component\RoutingExtra\Routing\PropertyPathMatcher;
+use Sonatra\Component\RoutingExtra\Routing\PropertyPathMatcherInterface;
+use Sonatra\Component\RoutingExtra\Tests\Fixtures\Model\Foo;
 
 /**
  * @author François Pluchino <francois.pluchino@sonatra.com>

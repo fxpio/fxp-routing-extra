@@ -1,9 +1,9 @@
 {
-    "name": "sonatra/routing-extra-bundle",
-    "type": "symfony-bundle",
+    "name": "sonatra/routing-extra",
+    "type": "library",
     "description": "A set of extra tools for the symfony routing",
-    "keywords": ["routing", "extra", "bundle"],
-    "homepage": "https://github.com/sonatra/SonatraRoutingExtraBundle",
+    "keywords": ["routing", "extra"],
+    "homepage": "https://github.com/sonatra/sonatra-routing-extra",
     "license": "MIT",
     "authors": [
         {
@@ -13,13 +13,12 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "symfony/framework-bundle": "~3.0",
         "symfony/routing": "~3.0",
         "symfony/property-access": "~3.0"
 
     },
     "autoload": {
-        "psr-4": { "Sonatra\\Bundle\\RoutingExtraBundle\\": "" },
+        "psr-4": { "Sonatra\\Component\\RoutingExtra\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]
