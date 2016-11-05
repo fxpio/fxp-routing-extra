@@ -5,7 +5,7 @@ Sonatra Routing Extra
 [![Build Status](https://img.shields.io/travis/sonatra/sonatra-routing-extra/master.svg)](https://travis-ci.org/sonatra/sonatra-routing-extra)
 [![Coverage Status](https://img.shields.io/coveralls/sonatra/sonatra-routing-extra/master.svg)](https://coveralls.io/r/sonatra/sonatra-routing-extra?branch=master)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/sonatra/sonatra-routing-extra/master.svg)](https://scrutinizer-ci.com/g/sonatra/sonatra-routing-extra?branch=master)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/7989c0af-ce9e-462a-b3ec-9d9d7de2d211.svg)](https://insight.sensiolabs.com/projects/7989c0af-ce9e-462a-b3ec-9d9d7de2d211)
+[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/12e7ba0f-c60f-4b24-b552-0a181af7eebf.svg)](https://insight.sensiolabs.com/projects/12e7ba0f-c60f-4b24-b552-0a181af7eebf)
 
 The Sonatra RoutingExtra is a set of extra tools for the symfony routing.
 
