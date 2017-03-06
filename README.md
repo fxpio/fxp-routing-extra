@@ -31,7 +31,7 @@ License
 
 This library is under the MIT license. See the complete license in the directory:
 
-[Resources/meta/LICENSE](Resources/meta/LICENSE)
+[LICENSE](LICENSE)
 
 About
 -----
