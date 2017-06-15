@@ -11,6 +11,7 @@
 
 namespace Sonatra\Component\RoutingExtra\Tests\Routing;
 
+use PHPUnit\Framework\TestCase;
 use Sonatra\Component\RoutingExtra\Routing\PropertyPathMatcher;
 use Sonatra\Component\RoutingExtra\Routing\PropertyPathMatcherInterface;
 use Sonatra\Component\RoutingExtra\Tests\Fixtures\Model\Foo;
@@ -18,7 +19,7 @@ use Sonatra\Component\RoutingExtra\Tests\Fixtures\Model\Foo;
 /**
  * @author François Pluchino <francois.pluchino@sonatra.com>
  */
-class PropertyPathMatcherTest extends \PHPUnit_Framework_TestCase
+class PropertyPathMatcherTest extends TestCase
 {
     /**
      * @var PropertyPathMatcherInterface

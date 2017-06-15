@@ -11,6 +11,7 @@
 
 namespace Sonatra\Component\RoutingExtra\Tests\Routing;
 
+use PHPUnit\Framework\TestCase;
 use Sonatra\Component\RoutingExtra\Routing\PropertyPathMatcher;
 use Sonatra\Component\RoutingExtra\Routing\RouterExtra;
 use Sonatra\Component\RoutingExtra\Routing\RouterExtraInterface;
@@ -21,7 +22,7 @@ use Symfony\Component\Routing\RouterInterface;
 /**
  * @author François Pluchino <francois.pluchino@sonatra.com>
  */
-class RouterExtraTest extends \PHPUnit_Framework_TestCase
+class RouterExtraTest extends TestCase
 {
     /**
      * @var RouterInterface|\PHPUnit_Framework_MockObject_MockObject
