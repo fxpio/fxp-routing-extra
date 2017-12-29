@@ -33,23 +33,23 @@ class PropertyPathMatcherTest extends TestCase
 
     public function getMatcherConfig()
     {
-        $dataArray = array(
+        $dataArray = [
             'custom_id' => 42,
-        );
+        ];
         $dataObject = new Foo();
         $dataObject->setBar(42);
 
-        return array(
-            array($dataArray, array('id' => '{{[custom_id]}}'), array('id' => 42)),
-            array($dataArray, array('id' => '{{[custom_id] }}'), array('id' => 42)),
-            array($dataArray, array('id' => '{{ [custom_id]}}'), array('id' => 42)),
-            array($dataArray, array('id' => '{{ [custom_id] }}'), array('id' => 42)),
+        return [
+            [$dataArray, ['id' => '{{[custom_id]}}'], ['id' => 42]],
+            [$dataArray, ['id' => '{{[custom_id] }}'], ['id' => 42]],
+            [$dataArray, ['id' => '{{ [custom_id]}}'], ['id' => 42]],
+            [$dataArray, ['id' => '{{ [custom_id] }}'], ['id' => 42]],
 
-            array($dataObject, array('id' => '{{bar}}'), array('id' => 42)),
-            array($dataObject, array('id' => '{{bar }}'), array('id' => 42)),
-            array($dataObject, array('id' => '{{ bar}}'), array('id' => 42)),
-            array($dataObject, array('id' => '{{ bar }}'), array('id' => 42)),
-        );
+            [$dataObject, ['id' => '{{bar}}'], ['id' => 42]],
+            [$dataObject, ['id' => '{{bar }}'], ['id' => 42]],
+            [$dataObject, ['id' => '{{ bar}}'], ['id' => 42]],
+            [$dataObject, ['id' => '{{ bar }}'], ['id' => 42]],
+        ];
     }
 
     /**
