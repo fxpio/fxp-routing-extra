@@ -1,26 +1,26 @@
 <?php
 
 /*
- * This file is part of the Sonatra package.
+ * This file is part of the Fxp package.
  *
- * (c) François Pluchino <francois.pluchino@sonatra.com>
+ * (c) François Pluchino <francois.pluchino@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Sonatra\Component\RoutingExtra\Tests\Routing;
+namespace Fxp\Component\RoutingExtra\Tests\Routing;
 
+use Fxp\Component\RoutingExtra\Routing\PropertyPathMatcher;
+use Fxp\Component\RoutingExtra\Routing\RouterExtra;
+use Fxp\Component\RoutingExtra\Routing\RouterExtraInterface;
+use Fxp\Component\RoutingExtra\Tests\Fixtures\Model\Foo;
 use PHPUnit\Framework\TestCase;
-use Sonatra\Component\RoutingExtra\Routing\PropertyPathMatcher;
-use Sonatra\Component\RoutingExtra\Routing\RouterExtra;
-use Sonatra\Component\RoutingExtra\Routing\RouterExtraInterface;
-use Sonatra\Component\RoutingExtra\Tests\Fixtures\Model\Foo;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
 
 /**
- * @author François Pluchino <francois.pluchino@sonatra.com>
+ * @author François Pluchino <francois.pluchino@gmail.com>
  */
 class RouterExtraTest extends TestCase
 {

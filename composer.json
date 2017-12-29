@@ -1,14 +1,14 @@
 {
-    "name": "sonatra/routing-extra",
+    "name": "fxp/routing-extra",
     "type": "library",
     "description": "A set of extra tools for the symfony routing",
     "keywords": ["routing", "extra"],
-    "homepage": "https://github.com/sonatra/sonatra-routing-extra",
+    "homepage": "https://github.com/fxpio/fxp-routing-extra",
     "license": "MIT",
     "authors": [
         {
             "name": "François Pluchino",
-            "email": "francois.pluchino@sonatra.com"
+            "email": "francois.pluchino@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -20,7 +20,7 @@
 
     },
     "autoload": {
-        "psr-4": { "Sonatra\\Component\\RoutingExtra\\": "" },
+        "psr-4": { "Fxp\\Component\\RoutingExtra\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]
