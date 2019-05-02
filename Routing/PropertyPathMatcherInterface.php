@@ -20,7 +20,7 @@ interface PropertyPathMatcherInterface
      * Match the route parameters with property path variables with the value in object or array.
      *
      * @param array        $parameters    The route parameters
-     * @param object|array $objectOrArray The object or array to traverse
+     * @param array|object $objectOrArray The object or array to traverse
      *
      * @return array The route parameters
      */

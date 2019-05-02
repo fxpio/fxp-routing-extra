@@ -24,7 +24,7 @@ class Foo
     /**
      * @param int $bar
      */
-    public function setBar($bar)
+    public function setBar($bar): void
     {
         $this->bar = $bar;
     }

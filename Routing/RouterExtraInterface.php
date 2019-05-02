@@ -38,15 +38,15 @@ interface RouterExtraInterface
      *
      * @param string       $name          The name of the route
      * @param array        $parameters    An array of parameters
-     * @param object|array $data          The data will must be mapped with property path in parameters
+     * @param array|object $data          The data will must be mapped with property path in parameters
      * @param int          $referenceType The type of reference to be generated (one of the constants)
-     *
-     * @return string The generated URL
      *
      * @throws RouteNotFoundException              If the named route doesn't exist
      * @throws MissingMandatoryParametersException When some parameters are missing that are mandatory for the route
      * @throws InvalidParameterException           When a parameter value for a placeholder is not correct because
      *                                             it does not match the requirement
+     *
+     * @return string The generated URL
      */
     public function generate($name, array $parameters, $data, $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH);
 }

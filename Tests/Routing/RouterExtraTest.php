@@ -21,11 +21,13 @@ use Symfony\Component\Routing\RouterInterface;
 
 /**
  * @author François Pluchino <francois.pluchino@gmail.com>
+ *
+ * @internal
  */
-class RouterExtraTest extends TestCase
+final class RouterExtraTest extends TestCase
 {
     /**
-     * @var RouterInterface|\PHPUnit_Framework_MockObject_MockObject
+     * @var \PHPUnit_Framework_MockObject_MockObject|RouterInterface
      */
     protected $router;
 
@@ -34,7 +36,7 @@ class RouterExtraTest extends TestCase
      */
     protected $routerExtra;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->router = $this->getMockBuilder(RouterInterface::class)->getMock();
         $this->routerExtra = new RouterExtra($this->router, new PropertyPathMatcher());
@@ -68,11 +70,12 @@ class RouterExtraTest extends TestCase
      * @param array        $parameters
      * @param array        $validParameters
      */
-    public function testGenerate($data, array $parameters, array $validParameters)
+    public function testGenerate($data, array $parameters, array $validParameters): void
     {
         $this->router->expects($this->once())
             ->method('generate')
-            ->with('test', $validParameters);
+            ->with('test', $validParameters)
+        ;
 
         $this->routerExtra->generate('test', $parameters, $data, UrlGeneratorInterface::ABSOLUTE_PATH);
     }

@@ -18,15 +18,17 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * @author François Pluchino <francois.pluchino@gmail.com>
+ *
+ * @internal
  */
-class PropertyPathMatcherTest extends TestCase
+final class PropertyPathMatcherTest extends TestCase
 {
     /**
      * @var PropertyPathMatcherInterface
      */
     protected $matcher;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->matcher = new PropertyPathMatcher();
     }
@@ -59,7 +61,7 @@ class PropertyPathMatcherTest extends TestCase
      * @param array        $parameters
      * @param array        $validParameters
      */
-    public function testMatcherParameters($data, array $parameters, array $validParameters)
+    public function testMatcherParameters($data, array $parameters, array $validParameters): void
     {
         $result = $this->matcher->matchRouteParameters($parameters, $data);
 
