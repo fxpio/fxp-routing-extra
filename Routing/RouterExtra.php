@@ -44,7 +44,7 @@ class RouterExtra implements RouterExtraInterface
     /**
      * {@inheritdoc}
      */
-    public function generate($name, array $parameters, $data, $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH)
+    public function generate(string $name, array $parameters, $data, int $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH): string
     {
         if (null !== $data) {
             $parameters = $this->matcher->matchRouteParameters($parameters, $data);

@@ -16,7 +16,6 @@ use Fxp\Component\RoutingExtra\Routing\RouterExtra;
 use Fxp\Component\RoutingExtra\Routing\RouterExtraInterface;
 use Fxp\Component\RoutingExtra\Tests\Fixtures\Model\Foo;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
 
 /**
@@ -75,8 +74,9 @@ final class RouterExtraTest extends TestCase
         $this->router->expects($this->once())
             ->method('generate')
             ->with('test', $validParameters)
+            ->willReturn('path')
         ;
 
-        $this->routerExtra->generate('test', $parameters, $data, UrlGeneratorInterface::ABSOLUTE_PATH);
+        $this->assertSame('path', $this->routerExtra->generate('test', $parameters, $data));
     }
 }

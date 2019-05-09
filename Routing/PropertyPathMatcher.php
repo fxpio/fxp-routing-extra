@@ -29,7 +29,7 @@ class PropertyPathMatcher implements PropertyPathMatcherInterface
      *
      * @param PropertyAccessorInterface $propertyAccessor The property accessor
      */
-    public function __construct(PropertyAccessorInterface $propertyAccessor = null)
+    public function __construct(?PropertyAccessorInterface $propertyAccessor = null)
     {
         $this->propertyAccessor = $propertyAccessor ?: PropertyAccess::createPropertyAccessor();
     }
@@ -37,7 +37,7 @@ class PropertyPathMatcher implements PropertyPathMatcherInterface
     /**
      * {@inheritdoc}
      */
-    public function matchRouteParameters(array $parameters, $objectOrArray)
+    public function matchRouteParameters(array $parameters, $objectOrArray): array
     {
         foreach ($parameters as $key => $params) {
             if (0 === strpos($params, '{{')) {

@@ -17,14 +17,14 @@ namespace Fxp\Component\RoutingExtra\Tests\Fixtures\Model;
 class Foo
 {
     /**
-     * @var int
+     * @var null|int
      */
     private $bar;
 
     /**
      * @param int $bar
      */
-    public function setBar($bar): void
+    public function setBar(?int $bar): void
     {
         $this->bar = $bar;
     }
@@ -32,7 +32,7 @@ class Foo
     /**
      * @return int
      */
-    public function getBar()
+    public function getBar(): ?int
     {
         return $this->bar;
     }

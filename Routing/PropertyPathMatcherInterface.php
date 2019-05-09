@@ -24,5 +24,5 @@ interface PropertyPathMatcherInterface
      *
      * @return array The route parameters
      */
-    public function matchRouteParameters(array $parameters, $objectOrArray);
+    public function matchRouteParameters(array $parameters, $objectOrArray): array;
 }
