@@ -15,6 +15,7 @@ use Fxp\Component\RoutingExtra\Routing\PropertyPathMatcher;
 use Fxp\Component\RoutingExtra\Routing\RouterExtra;
 use Fxp\Component\RoutingExtra\Routing\RouterExtraInterface;
 use Fxp\Component\RoutingExtra\Tests\Fixtures\Model\Foo;
+use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Routing\RouterInterface;
 
@@ -26,7 +27,7 @@ use Symfony\Component\Routing\RouterInterface;
 final class RouterExtraTest extends TestCase
 {
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|RouterInterface
+     * @var MockObject|RouterInterface
      */
     protected $router;
 
